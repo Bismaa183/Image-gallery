@@ -1,0 +1,141 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background-color: #f7f7f7; */
+  background-color: #333;
+  text-align: center;
+}
+
+.title {
+  padding: 20px;
+  /* color: #333; */
+  color: white;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 5px;
+}
+
+.gallery img {
+  width: 200px;
+  height: 150px;
+  /* border-radius: 8px; */
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Lightbox styles */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 170%;
+  background-color: rgba(0,0,0,0.9);
+  text-align: center;
+  padding-top: 160px;
+}
+
+.lightbox-image {
+  max-width: 90%;
+  max-height:  70%;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 35%;
+  font-size: 40px;
+  padding: 10px;
+  color: white;
+  user-select: none;
+}
+
+.prev { left: 30px; }
+.next { right: 30px; }
+
+@media screen and (max-width: 768px) {
+  .gallery img {
+    width: 200px;
+  }
+  .prev, .next {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1062px) {
+  .gallery img {
+    width: 150px;
+  }
+  .prev, .next {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 814px) {
+  .gallery img {
+    width: 100px;
+  }
+  .prev, .next {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 564px) {
+  .gallery img {
+    width: 90px;
+  }
+  .prev, .next {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 514px) {
+  .gallery img {
+    width: 77px;
+  }
+  .prev, .next {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 449px) {
+  .gallery img {
+    width: 65px;
+  }
+  .prev, .next {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 389px) {
+  .gallery img {
+    width: 50px;
+  }
+  .prev, .next {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 314px) {
+  .gallery img {
+    width: 40px;
+  }
+  .prev, .next {
+    font-size: 30px;
+  }
+}
